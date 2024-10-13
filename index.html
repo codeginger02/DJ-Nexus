@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <div id="colorDiv"></div>
+    <div id="mainDiv">
+      <nav id="topNav">
+        <div id="navDiv1">
+          <a href="#mainDiv" class="hover">Home</a>
+          <a href="#dividerDiv" class="hover">About</a>
+          <a href="#section3" class="hover">Music</a>
+          <a href="#" class="hover">Contact</a>
+        </div>
+
+        <div id="navDiv2">
+          <button onclick="musicPlay()" style="background-color: transparent">
+            <i class="fa-solid fa-music hover" id="musicIcon"></i>
+          </button>
+          <i class="fa-solid fa-compact-disc hover"></i>
+          <i class="fa-solid fa-right-to-bracket hover"></i>
+          <div id="themeDiv">
+            <button class="themeButton" onclick="light()">
+              <i class="fa-regular fa-sun hover" id="lightButton"></i>
+            </button>
+
+            <button class="themeButton" onclick="dark()">
+              <i class="fa-solid fa-moon hover" id="darkButton"></i>
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <div id="heroDiv">
+        <h1 class="mainText">DJ NEXUS</h1>
+        <audio src="music/bg_sound-[AudioTrimmer.com].mp3" loop></audio>
+      </div>
+      <div id="heroDiv2">
+        <h2 class="mainText">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </h2>
+      </div>
+    </div>
+
+    <div id="dividerDiv"></div>
+
+    <section id="section2">
+      <div id="mainDiv2">
+        <a href="https://github.com/NagarajGolai/Web-Dev" target="_blank">
+          <h1 class="textCG">CODE</h1>
+        </a>
+        <br>
+        <a href="https://github.com/NagarajGolai/Web-Dev" target="_blank">
+          <h3 class="textCG">GINGER.</h3>
+        </a>
+
+        <p id="CGLorem">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor, sit
+          amet consectetur adipisicing elit. Animi nemo asperiores quo tenetur
+          aspernatur labore minus. Eius doloremque voluptatem in.
+        </p>
+      </div>
+    </section>
+
+    <section id="section3">
+      <div id="dividerDiv">MUSIC</div>
+      <div id="mainDiv3">
+
+        <video src="\videos\music2.mp4" autoplay loop id="bgVideo" class="video"></video>
+
+        <video src="\videos\bg_mobile.mp4" autoplay loop id="bgVideo2" class="video"></video>
+
+        <video src="\videos\bg_mobile.mp4" autoplay loop id="bgVideo3" class="video"></video>
+
+        <div id="box1" class="box oddBox">
+          <video src="\videos\music1.mp4" autoplay loop class="video"></video>
+          Melody
+        </div>
+        <div id="box2" class="box evenBox">
+          <video src="\videos\bg.mp4" autoplay loop class="video"></video>
+          Pleasant
+        </div>
+        <div id="box3" class="box oddBox">
+          <video src="\videos\music3.mp4" autoplay loop class="video"></video>
+          Jazz
+        </div>
+        <div id="box4" class="box evenBox">
+          <video src="\videos\music4.mp4" autoplay loop class="video"></video>
+          DJ
+        </div>
+      </div>
+
+    </section>
+
+    <section id="section4">
+      <div id="dividerDiv"></div>
+
+      <div id="lastDiv">
+        <span>Contact Us</span>
+        <div id="loginDiv">
+          <span id="spanHead" tabindex="0">Login Form</span>
+          <form>
+            <div class="inputDiv">
+              <input type="text" />
+              <span>Username</span>
+            </div>
+            <div class="inputDiv">
+              <input type="password" />
+              <span>Password</span>
+            </div>
+            <button id="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
